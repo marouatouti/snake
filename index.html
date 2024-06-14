@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div id="gameArea"></div>
-    <div id="score">Score: 0</div>
-    <div id="controls">
+    <div id="levelSelection">
+        <h1>Choisissez un niveau</h1>
+        <button onclick="startGame(1)">Facile</button>
+        <button onclick="startGame(2)">Moyen</button>
+        <button onclick="startGame(3)">Difficile</button>
+    </div>
+    <div id="gameArea" style="display: none;"></div>
+    <div id="score" style="display: none;">Score: 0</div>
+    <div id="controls" style="display: none;">
         <button id="upButton">↑</button>
         <div>
             <button id="leftButton">←</button>
@@ -17,7 +23,7 @@
             <button id="rightButton">→</button>
         </div>
     </div>
-    <button id="restartButton" onclick="restartGame()">Restart Game</button>
+    <button id="restartButton" onclick="restartGame()" style="display: none;">Restart Game</button>
     <script src="app.js"></script>
 </body>
 </html>
